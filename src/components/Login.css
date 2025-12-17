@@ -1,0 +1,215 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.login-container {
+  max-width: 500px;
+  width: 100%;
+}
+
+.login-title-box {
+  background: #F5F5F5;
+  border-radius: 15px;
+  padding: 10px 30px;
+  margin: 0 auto 25px auto;
+  text-align: center;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: block;
+  width: fit-content;
+}
+
+.login-title {
+  color: #625656;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 0.4px;
+}
+
+.login-card {
+  background: #D9D9D9;
+  border-radius: 25px;
+  padding: 40px;
+  box-shadow: 0 10px 35px rgba(60, 47, 47, 0.3);
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.login-input {
+  width: 100%;
+  padding: 14px 20px;
+  background: #9D9D9D;
+  border: none;
+  border-radius: 12px;
+  font-size: 25px;
+  color: #3c2f2f;
+  outline: none;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.login-input::placeholder {
+  color: #fff;
+  opacity: 0.8;
+  font-weight: 500;
+}
+
+.login-input:focus {
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2), 0 0 0 2px rgba(139, 90, 43, 0.3);
+}
+
+.login-button {
+  width: 30%;
+  background: #BEBEBE;
+  border: none;
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #3c2f2f;
+  cursor: pointer;
+  margin: 10px auto 20px auto;
+  display: block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s;
+}
+
+.login-button:hover {
+  background: #AEAEAE;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #8b5a2b;
+  opacity: 0.5;
+}
+
+.divider-text {
+  padding: 0 15px;
+  color: #8b5a2b;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Кнопка "Зарегистрироваться" */
+.register-toggle-button {
+  width: 100%;
+  background: #495674;
+  border: none;
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(135, 206, 235, 0.3);
+  transition: all 0.3s;
+  letter-spacing: 0.5px;
+}
+
+.register-toggle-button:hover {
+  background: #2D354A;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(135, 206, 235, 0.4);
+}
+
+/* Форма регистрации */
+.register-form {
+  margin-top: 10px;
+}
+
+.register-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.register-submit-button {
+  background: #D9D9D9;
+  border: none;
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #3c2f2f;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s;
+}
+
+.register-submit-button:hover {
+  background: #C9C9C9;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-login-button {
+  background: transparent;
+  border: none;
+  color: #8b5a2b;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.back-to-login-button:hover {
+  color: #7a4a1b;
+}
+
+/* Утилиты */
+.hidden {
+  display: none;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+  .login-card {
+    padding: 30px 20px;
+  }
+
+  .login-title {
+    font-size: 20px;
+  }
+
+  .login-button,
+  .register-toggle-button,
+  .register-submit-button {
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+
+/* Анимация переключения форм */
+.login-form,
+.register-form {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
