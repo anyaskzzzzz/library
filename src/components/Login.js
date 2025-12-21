@@ -35,7 +35,7 @@ function Login() {
   const handleLoginSubmit = (e) => {
     e.preventDefault();
     console.log('вход:', loginData);
-    navigate('/');
+    navigate('/account'); // Изменено с '/' на '/account'
   };
 
   const handleRegisterSubmit = (e) => {
@@ -45,21 +45,21 @@ function Login() {
       return;
     }
     console.log('регистрация:', registerData);
-    navigate('/');
+    navigate('/account'); // Изменено с '/' на '/account'
   };
 
   // ФОН С ИЗОБРАЖЕНИЕМ
-const pageStyle = {
-  minHeight: '100vh',
-  backgroundImage: 'url(/images/fon.png)',  // Измените путь
-  backgroundSize: 'cover',
-  backgroundPosition: 'center',
-  backgroundRepeat: 'no-repeat',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  padding: '20px'
-};
+  const pageStyle = {
+    minHeight: '100vh',
+    backgroundImage: 'url(/images/fon.png)',  // Измените путь
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '20px'
+  };
 
   return (
     <div className="login-page" style={pageStyle}>

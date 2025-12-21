@@ -7,6 +7,7 @@ import Documents from './components/Documents';
 import AllArticles from './components/AllArticles';
 import DocumentsDisciplines from './components/DocumentsDisciplines';
 import ArticlePage from './components/ArticlePage';
+import Account from './components/Account';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/all-articles" element={<AllArticles />} />
           <Route path="/documents-disciplines" element={<DocumentsDisciplines />} />
           <Route path="/article/:id" element={<ArticlePage />} />
+          <Route path="/account" element={<Account />} /> {/*  */}
         </Routes>
       </div>
     </Router>
